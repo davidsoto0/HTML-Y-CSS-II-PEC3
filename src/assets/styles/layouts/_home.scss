@@ -1,0 +1,15 @@
+body {
+  font-family: $font-family-sans-serif;
+  background-color: #ffffff;
+  color: black;
+
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.informacion_footer {
+  margin-left: 10%;
+  margin-right: 10%;
+}
