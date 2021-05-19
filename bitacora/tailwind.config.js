@@ -1,7 +1,13 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
-  purge: [false],
-  darkMode: false, // or 'media' or 'class'
   theme: {
+    colors: {
+      gray: colors.coolGray,
+      blue: colors.lightBlue,
+      red: colors.rose,
+      pink: colors.fuchsia,
+    },
     fontFamily: {
       'times': ['Times New Roman', 'Times', 'serif'],
       'georgia': ['Georgia', 'Times New Roman', 'serif'],
@@ -18,10 +24,25 @@ module.exports = {
       inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
       none: 'none',
     },
-    extend: {},
+    extend: {
+      spacing: {
+        '128': '32rem',
+        '144': '36rem',
+      },
+      borderRadius: {
+        '4xl': '2rem',
+      },
+      backgroundImage: theme => ({
+        'grupo': "url('/src/assets/images/GrupoDeMusicaSinFondo.png')"
+      })
+    }
   },
   variants: {
-    extend: {},
+    extend: {
+      borderColor: ['focus-visible'],
+      opacity: ['disabled'],
+      // transitionDuration: ['hover', 'focus'],
+    }
   },
   plugins: [],
 }

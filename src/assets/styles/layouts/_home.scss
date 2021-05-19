@@ -13,3 +13,13 @@ body {
   margin-left: 10%;
   margin-right: 10%;
 }
+
+@layer components {
+  .header_link {
+    @apply block  block text-center pt-2 pb-2 no-underline text-lg font-bold transition ease-linear duration-500 border-b-4;
+  }
+
+  .footer_link {
+    @apply block text-lg text-center pt-2 pb-2 no-underline font-bold;
+  }
+}

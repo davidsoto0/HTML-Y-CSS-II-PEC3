@@ -1,0 +1,9 @@
+@layer components {
+  .card {
+    @apply shadow-custom bg-gray-100 w-96 pb-2.5 text-center h-full;
+
+    .card__header {
+      @apply shadow-custom p-5 m-5 text-5xl;
+    }
+  }
+}
